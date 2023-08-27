@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <title>webstudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>Web Studio</title>
   </head>
 
-  <!--HEADER-->
   <body>
+    <!--HEADER-->
+
     <header class="page-header">
-      <div class="page-header-container container">
+      <div class="header-container container">
         <nav class="header-nav">
           <a class="header-nav-logo-blue link" href="./index.html"
             >Web<span class="header-nav-logo-black">Studio</span></a
@@ -41,6 +42,7 @@
             </li>
           </ul>
         </nav>
+
         <address class="header-contacts">
           <ul class="header-contacts-list list">
             <li class="header-contacts-item">
@@ -57,6 +59,96 @@
             </li>
           </ul>
         </address>
+
+        <button class="mobile-menu-open js-open-menu" type="button">
+          <svg
+            class="mobile-menu-open-icon"
+            aria-label="mobile-menu-open"
+            width="32"
+            height="22"
+            stroke="var(--dark-color)"
+          >
+            <use href="./images/icons.svg#mobile-menu-open"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu-container js-menu-container">
+          <div class="mobile-menu-wrapper">
+            <button class="mobile-menu-close js-close-menu" type="button">
+              <svg
+                class="mobile-menu-close-icon"
+                aria-label="mobile-menu-close"
+                width="8"
+                height="8"
+              >
+                <use href="./images/icons.svg#mobile-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-nav current link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-nav link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-nav link" href="">Contacts</a>
+              </li>
+            </ul>
+            <address class="mobile-menu-contacts">
+              <ul class="mobile-menu-contacts-list list">
+                <li class="mobile-menu-contacts-item">
+                  <a
+                    class="mobile-menu-contacts-tel link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu-contacts-item">
+                  <a
+                    class="mobile-menu-contacts-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-menu-social-list list">
+              <li class="mobile-menu-social-item">
+                <a class="mobile-menu-social-link link" href="">
+                  <svg class="mobile-menu-social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="mobile-menu-social-link link" href="">
+                  <svg class="mobile-menu-social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="mobile-menu-social-link link" href="">
+                  <svg class="mobile-menu-social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="mobile-menu-social-link link" href="">
+                  <svg class="mobile-menu-social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -156,7 +248,8 @@
             <li class="what-doing-item">
               <img
                 class="what-doing-image"
-                src="./images/what-doing/what-doing-01.jpg"
+                srcset="./images/02-what-doing/what-doing-01-2x.jpg 2x"
+                src="./images/02-what-doing/what-doing-01-1x.jpg"
                 alt="computer-monitor"
                 width="360"
               />
@@ -164,7 +257,8 @@
             <li class="what-doing-item">
               <img
                 class="what-doing-image"
-                src="./images/what-doing/what-doing-02.jpg"
+                srcset="./images/02-what-doing/what-doing-02-2x.jpg 2x"
+                src="./images/02-what-doing/what-doing-02-1x.jpg"
                 alt="phone-application"
                 width="360"
               />
@@ -172,7 +266,8 @@
             <li class="what-doing-item">
               <img
                 class="what-doing-image"
-                src="./images/what-doing/what-doing-03.jpg"
+                srcset="./images/02-what-doing/what-doing-03-2x.jpg 2x"
+                src="./images/02-what-doing/what-doing-03-1x.jpg"
                 alt="laptop-and-phone"
                 width="360"
               />
@@ -189,7 +284,8 @@
             <li class="team-item">
               <img
                 class="team-image"
-                src="./images/team/team-01.jpg"
+                srcset="./images/03-team/team-01-2x.jpg 2x"
+                src="./images/03-team/team-01-1x.jpg"
                 alt="photo Mark Guerrero"
                 width="264"
               />
@@ -251,7 +347,8 @@
             <li class="team-item">
               <img
                 class="team-image"
-                src="./images/team/team-02.jpg"
+                srcset="./images/03-team/team-02-2x.jpg 2x"
+                src="./images/03-team/team-02-1x.jpg"
                 alt="photo Tom Ford"
                 width="264"
               />
@@ -313,7 +410,8 @@
             <li class="team-item">
               <img
                 class="team-image"
-                src="./images/team/team-03.jpg"
+                srcset="./images/03-team/team-03-1x.jpg 2x"
+                src="./images/03-team/team-03-1x.jpg"
                 alt="photo Camila Garcia"
                 width="264"
               />
@@ -375,7 +473,8 @@
             <li class="team-item">
               <img
                 class="team-image"
-                src="./images/team/team-04.jpg"
+                srcset="./images/03-team/team-04-2x.jpg 2x"
+                src="./images/03-team/team-04-1x.jpg"
                 alt="photo Daniel Wilson"
                 width="264"
               />
@@ -440,7 +539,7 @@
 
       <!--CUSTOMERS-->
       <section class="customers">
-        <div class="container">
+        <div class="customers-container container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
@@ -618,6 +717,7 @@
       </div>
     </footer>
 
+    <!--MODAL-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button-close" type="button" data-modal-close>
@@ -653,6 +753,7 @@
               </svg>
             </div>
           </div>
+
           <div class="modal-wrapper">
             <label class="modal-label" for="phone-number">Phone</label>
             <div class="modal-icon-wrapper">
@@ -733,5 +834,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
